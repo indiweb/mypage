@@ -1,0 +1,398 @@
+/*reset*/
+body {
+	width: 100%;
+	font-family: serif;
+	margin: 0 auto 0 auto;
+	background-color: #ecf0f1;
+	min-width: 705px;
+	max-width: 100%;
+}
+
+.width-container {
+	max-width: 960px !important;
+	margin: 0 auto 0 auto;
+}
+
+/* Added Fonts */
+@font-face {
+	font-family: 'Heydings';
+	src: url('/public/fonts/heydings/heydings_icons-webfont.ttf');
+}
+
+
+/*Design Elements*/
+.hidden {
+	display: none !important;
+}
+
+.symbol-border {
+	width: 100%;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: relative;
+	top: 6.5em;
+}
+
+.symbol-border-price {
+	width: 100%;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: relative;
+	top: 0em;
+}
+
+.symbol {
+	font-family: 'Heydings';
+	font-size:4em;
+	color: #79D3FC;
+	position: absolute;
+	top: 0.3em;
+	text-align: center;
+	width: 100%;
+}
+
+#compass-label {
+	font-family: 'Heydings';
+	font-size:4em;
+	color: #79D3FC;
+	position: absolute;
+	top: -1.45em;
+	text-align: center;
+	width: 100%;
+}
+
+.symbol-price {
+	font-family: 'Heydings';
+	font-size: 4.5em;
+	color: #79D3FC;
+	position: absolute;
+	top: 0.1em;
+	text-align: center;
+	width: 100%;
+}
+
+#start {
+	background-color: #394042;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+#background-image {
+	position: absolute;
+	opacity: 0.15;
+	z-index: 888;
+	min-height: 100%;
+	max-width: 100%;
+}
+
+#start-logo {
+	position: absolute;
+	top: 2em;
+	left: 2em;
+}
+
+#start-title {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.8em;
+	font-weight:300;
+	color: #fff;
+	margin: 9em auto 0 auto;
+	width: 100%;
+}
+
+#start-title p {
+	margin: 0;
+}
+
+#start-buttons {
+	position: absolute;
+	top: 28em;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	width: 100%;
+	max-width: 960px;
+	z-index: 999;
+}
+
+#learn-more, #start-contact {
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4em;
+	font-weight: 100;
+	color: #fff;
+	border: solid 1px #fff;
+	border-radius: 2px;
+	margin: 0 0.5em 0 0.5em;
+	width: 9em;
+	background-color: rgba(0,0,0, 0.3);
+	cursor: pointer;
+}
+
+#container {
+	position: relative;
+}
+
+#top {
+	background-color: #394042;
+	height: 7em;
+	width: 100%;
+	position: relative;
+	top: 0;
+	z-index: 999;
+}
+
+#about {
+
+}
+
+footer {
+	background-color: #394042;
+	height: 5em;
+	width: 100%;
+	padding: 1.7em 0 0 0;
+}
+
+footer p {
+	margin-left: 2em;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 13px;
+	margin-top: 1.5em;
+}
+
+.menu-links {
+	width: 32em;
+	height: 1em;
+	color: #ecf0f1;
+	right: 0;
+	position: absolute;
+	bottom: 1em;
+}
+
+.menu-links a, .links {
+	color: #ecf0f1;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 0 5px 0 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.menu-links a:hover {
+	text-decoration: underline;
+}
+
+.menu-links a:active {
+	color: #bdc3c7;
+}
+
+.logo-section {
+	position: relative;
+	left: 1em;
+	top: 0.6em;
+}
+
+.english {
+	display: none;
+}
+
+#home-main {
+}
+
+#slider {
+	width: 100%;
+	background-color: #79D3FC;
+	height: 16em;
+	position: relative;
+	top: 7em;
+}
+/*
+#moto-background {
+	background-image: url('/public/img/moto-coffee.png');
+	height: 16em;
+	width: 100%;
+	margin: 0 auto 0 auto;
+	position: absolute;
+	opacity: 0.08;
+	background-repeat: no-repeat;
+	background-size: 960px 16em;
+}*/
+
+#slide-1 {
+	position: absolute;
+	padding-top: 4em;
+	top: 0;
+	width: 100%;
+	opacity: 0.9;
+}
+
+#slide-1 h1, #slide-1 h3, #slide-1 p {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	margin:0;
+}
+
+#slide-1 h1 {
+	font-size: 3em;
+}
+
+#slide-1 p {
+	font-style: italic;
+	margin-top: 0.5em;
+	font-size: 1.5em;
+}
+
+#bottom-section {
+	position: relative;
+}
+
+#left-section {
+	height: 17em;
+	width: 100%;
+	margin: 3em 0.25em 0.5em 0;
+	display: block;
+	position: relative;
+	top: 12em;
+}
+
+#likes-section {
+	width: 100%;
+	margin: 13em 0.25em 0.5em 0;
+}
+
+#left-section h1, #left-section p, #likes-section h1, #likes-section p,
+#middle-section h1, #middle-section p, #price-section h1, #service-list, .contact-div h2,
+.contact-div label {
+	margin: 0.5em;
+	font-family: 'Roboto', sans-serif;
+	color: #545454;
+	text-align: center;
+}
+
+#service-list-disclaimer {
+	margin-top: 2em;
+	font-family: 'Roboto', sans-serif;
+	color: #545454;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+#left-section p {
+	font-size: 1.4em;
+	font-style: italic;
+}
+
+#left-section h1 {
+	width: 18em;
+	border-bottom: 1px solid #34495e;
+	padding-bottom: 0.4em;
+	margin: 0 auto 1em auto;
+}
+
+#heart-label {
+	font-family: 'Heydings';
+	color: #c0392b;
+}
+
+#middle-section h1 {
+	width: 19em;
+	border-bottom: 1px solid #34495e;
+	padding-bottom: 0.4em;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+#likes-section h1 {
+	width: 16em;
+	border-bottom: 1px solid #34495e;
+	padding-bottom: 0.4em;
+	margin: 0 auto 1em auto;
+}
+
+#price-section h1 {
+	width: 11.5em;
+	border-bottom: 1px solid #34495e;
+	padding-bottom: 0.4em;
+	margin: 0 auto 1em auto;
+}
+
+#middle-section {
+	height: 17em;
+	margin: 13em 0.25em 4em 0.25em;
+	display: block;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+}
+
+#price-section {
+	margin: 5.5em 0.25em 0.5em 0.25em;
+	display: block;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contact-div {
+	height: 17em;
+	margin: 7em auto 3em auto;
+	display: block;
+	position: relative;
+	top: 0;
+	right: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.7em;
+	width: 25em;
+}
+
+.contact-form input[type="text"] {
+	border: solid 1px #34495e;
+	border-radius: 3px;
+	font-size: 0.8em;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 1em;
+}
+
+.contact-div textarea {
+	width: 27.5em;
+	height: 5em;
+	text-align: left;
+	margin-left: 0.5em;
+	border: solid 1px #34495e;
+	border-radius: 5px;
+	font-size: 0.8em;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 1em;
+}
+
+.submit-button {
+	background-color: #ecf0f1;
+	height: 2em;
+	width: 5em;
+	border-radius: 3px;
+	font-family: 'Roboto', sans-serif;
+	color: #394042;
+	font-size: 1em;
+	position: relative;
+	left: 17.7em;
+	border: solid 1px #394042;
+}
+
+.contact-div label {
+	margin-left: 0.5em;
+}
+
+.input-align {
+	position: absolute;
+	left: 8em;
+	width: 20em;
+}
+
+#about-section {
+	height: 40em;
+	background-color: black;
+}
