@@ -14,13 +14,14 @@
 		this.contactDiv = '.contact-div';
 
 		this.init();
-		this.menuFixed();
 	}
 
 	Layout.prototype.init = function(){
 		this.bodyClickEvents();
 		this.activeLink();
 		this.hoverMenu();
+		this.menuFixed();
+		this.validateForm();
 		console.log('init loaded');
 	}
 
@@ -172,6 +173,35 @@
 				$('#top').css('position', 'fixed');
 			} else {
 				$('#top').css('position', 'absolute');
+			}
+		});
+	}
+
+	Layout.prototype.validateForm = function (){
+		$('#contact-form').validate({
+			rules: {
+				fullname: {
+					required: true,
+					minlength: 2
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				comments: {
+					required: true,
+					minlength: 2
+				}
+			},
+			messages: {
+				fullname: {
+					required: "Se necesita tu nombre para contactarte.",
+					fullname: "Por favor escribe tu nombre."
+				},
+				email: {
+					required: "Se necesita tu email para contactarte.",
+					email: "Tu email tiene que estar en el formato correcto."
+				}
 			}
 		});
 	}

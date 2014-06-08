@@ -10,6 +10,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,400italic,300italic' rel='stylesheet' type='text/css'>
 		<!-- JS  -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="/public/vendor/validate/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="/public/js/main.js"></script>
 		<script type="text/javascript" src="/public/js/layout.js"></script>
 
@@ -135,11 +136,11 @@
 				</div>
 				<div class="contact-div">
 					<h2>Contacto</h2>
-					<form class="spanish contact-form" method="post" action="/php/form_handler.php" target="_new">
-						<label>Nombre:</label><input class="input-align" type="text" name="fullname"><br>
-						<label>Telefono:</label><input class="input-align" type="text" name="phone"><br>
-						<label>e-mail:</label><input class="input-align" type="text" name="email"><br>
-						<label>Ciudad:</label><input class="input-align" type="text" name="city"><br>
+					<form class="spanish contact-form" id="contact-form" method="post" action="/php/form_handler.php" target="_new">
+						<div class="line-input"><label>Nombre:</label><input class="input-align" type="text" name="fullname"></div>
+						<div class="line-input"><label>Telefono:</label><input class="input-align" type="text" name="phone"></div>
+						<div class="line-input"><label>e-mail:</label><input class="input-align" type="text" name="email"></div>
+						<div class="line-input"><label>Ciudad:</label><input class="input-align" type="text" name="city"></div>
 						<br>
 						<label>Comentarios/Preguntas:</label><br>
 						<textarea name="comments">Comentarios o preguntas.</textarea>

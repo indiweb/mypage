@@ -396,3 +396,20 @@ footer p {
 	height: 40em;
 	background-color: black;
 }
+
+.line-input {
+	display: block;
+	position: relative;
+}
+
+label.error {
+	position: absolute;
+	left: 52em;
+	top: 0;
+	color: red;
+	font-size: 12px;
+	width: 15em;
+	display: inline-block;
+	text-align: left;
+	margin: auto;
+}
