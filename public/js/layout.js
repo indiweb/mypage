@@ -61,6 +61,12 @@
 			console.log('scrolling to contact div...');
 			_this.scrollToSection('.contact-div');
 		});
+
+		$('#contact-form').submit(function(){
+			console.log('submitting form');
+			_this.formSubmit();
+			return false;
+		})
 	}
 
 	Layout.prototype.hoverMenu = function(){
@@ -209,7 +215,7 @@
 	}
 
 	Layout.prototype.formSubmit = function (){
-		$('#submit-btn').on('click', function(){
+		
 			var fullname = $('input#fullname').val();
 			var phone = $('input#phone').val();
 			var email = $('input#email').val();
@@ -222,7 +228,7 @@
 
 			$.ajax({
 				type: 'POST',
-				url: '/php/form_handler.php',
+				url: '../php/form_handler.php',
 				data: dataString,
 				success: function(){
 		
@@ -232,5 +238,5 @@
 				}
 			});
 			return false;
-		});
+		
 	}
