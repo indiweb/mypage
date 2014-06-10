@@ -420,3 +420,10 @@ label.error {
 	text-align: left;
 	margin: auto;
 }
+
+.success-msg {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #545454;
+}

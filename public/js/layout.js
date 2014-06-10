@@ -231,7 +231,8 @@
 				url: '../php/form_handler.php',
 				data: dataString,
 				success: function(){
-		
+					$('.contact-form').hide();
+					$('.contact-div').append('<p class="success-msg">Su mensaje a sido enviado.</p>');
 				},
 				error: function(){
 					alert('Form not submitted');
