@@ -206,31 +206,31 @@
 				}
 			}
 		});
-
-		$('#submit-btn').on('click', function(){
-			this.formSubmit();
-		});
 	}
 
 	Layout.prototype.formSubmit = function (){
+		$('#submit-btn').on('click', function(){
+			var fullname = $('input#fullname').val();
+			var phone = $('input#phone').val();
+			var email = $('input#email').val();
+			var city = $('input#city').val();
+			var comments = $('textarea#comments').val();
+		
 
-		var fullname = $('input#fullname');
-		var phone = $('input#phone');
-		var email = $('input#email');
-		var city = $('input#city');
-		var comments = $('textarea#comments');
-	
+			var dataString = 'fullname=' + fullname + 'phone=' + phone + 'email=' + email + 'city=' + city +
+			'comments=' + comments;
 
-		var dataString = 'fullname=' + fullname + 'phone=' + phone + 'email=' + email + 'city=' + city +
-		'comments=' + comments;
-
-		$.ajax({
-			type: 'POST',
-			url: '/php/form_handler.php',
-			data: dataString,
-			success: function(){
-				alert('Form Submitted');
-			}
+			$.ajax({
+				type: 'POST',
+				url: '/php/form_handler.php',
+				data: dataString,
+				success: function(){
+		
+				},
+				error: function(){
+					alert('Form not submitted');
+				}
+			});
+			return false;
 		});
-		return false;
 	}
