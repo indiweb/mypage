@@ -129,12 +129,14 @@
 		$(window).scroll(function(){
 			var winPos = $(window).scrollTop();
 			console.log(winPos);
-
+			var bottom;
 			var startPos = 0;
 			var topPos = $('#top').offset().top - 140;
 			var leftSection = $('#left-section').offset().top - 140;
 			var priceSection = $(_this.priceSection).offset().top - 245;
 			var contactSection = $(_this.contactDiv).offset().top - 245;
+			var winHeight = $(window).height();
+
 
 			if(winPos >= startPos && winPos < topPos){
 				$(_this.homeLink).css('text-decoration', 'underline');
@@ -154,7 +156,7 @@
 				$(_this.services).css('text-decoration', 'none');
 			}
 
-			if(winPos >= contactSection) {
+			if(winPos >= contactSection || winPos >= 2985) {
 				$(_this.contactMe).css('text-decoration', 'underline');
 			} else {
 				$(_this.contactMe).css('text-decoration', 'none');
@@ -204,4 +206,31 @@
 				}
 			}
 		});
+
+		$('#submit-btn').on('click', function(){
+			this.formSubmit();
+		});
+	}
+
+	Layout.prototype.formSubmit = function (){
+
+		var fullname = $('input#fullname');
+		var phone = $('input#phone');
+		var email = $('input#email');
+		var city = $('input#city');
+		var comments = $('textarea#comments');
+	
+
+		var dataString = 'fullname=' + fullname + 'phone=' + phone + 'email=' + email + 'city=' + city +
+		'comments=' + comments;
+
+		$.ajax({
+			type: 'POST',
+			url: '/php/form_handler.php',
+			data: dataString,
+			success: function(){
+				alert('Form Submitted');
+			}
+		});
+		return false;
 	}

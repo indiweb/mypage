@@ -13,6 +13,13 @@ body {
 	margin: 0 auto 0 auto;
 }
 
+::selection {
+	background: #79D3FC; /* Safari */
+	}
+::-moz-selection {
+	background: #79D3FC; /* Firefox */
+}
+
 /* Added Fonts */
 @font-face {
 	font-family: 'Heydings';
