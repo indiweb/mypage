@@ -221,10 +221,14 @@
 			var email = $('input#email').val();
 			var city = $('input#city').val();
 			var comments = $('textarea#comments').val();
+
+			var dataString = {'fullname': fullname, 'phone': phone, 'email': email, 
+			'city': city, 'comments': comments};
 		
 
-			var dataString = 'fullname=' + fullname + 'phone=' + phone + 'email=' + email + 'city=' + city +
+		/*	var dataString = 'fullname=' + fullname + 'phone=' + phone + 'email=' + email + 'city=' + city +
 			'comments=' + comments;
+			*/
 
 			$.ajax({
 				type: 'POST',
