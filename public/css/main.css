@@ -432,3 +432,16 @@ label.error {
 	text-align: center;
 	color: #545454;
 }
+
+
+/* FOR IE */
+
+.warning {
+	position: fixed;
+	bottom: 0;
+	height: 300px;
+	width: 100%;
+	background-color: red;
+	color: white;
+	z-index: 999;
+}
