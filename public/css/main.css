@@ -37,7 +37,7 @@ body {
 	height: 1px;
 	background-color: rgba(0, 0, 0, 0.2);
 	position: relative;
-	top: 6.5em;
+	top: 1em;
 }
 
 .symbol-border-price {
@@ -63,7 +63,7 @@ body {
 	font-size:4em;
 	color: #79D3FC;
 	position: absolute;
-	top: -1.45em;
+	top: -1.2em;
 	text-align: center;
 	width: 100%;
 }
@@ -247,7 +247,7 @@ footer p {
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	margin:0;
+	margin:0.3em;
 }
 
 #slide-1 h1 {
@@ -270,12 +270,12 @@ footer p {
 	margin: 3em 0.25em 0.5em 0;
 	display: block;
 	position: relative;
-	top: 12em;
+	top: 8em;
 }
 
 #likes-section {
 	width: 100%;
-	margin: 13em 0.25em 0.5em 0;
+	margin: 7em 0.25em 0.5em 0;
 }
 
 #left-section h1, #left-section p, #likes-section h1, #likes-section p,
@@ -336,7 +336,7 @@ footer p {
 
 #middle-section {
 	height: 17em;
-	margin: 13em 0.25em 4em 0.25em;
+	margin: 7em 0.25em 4em 0.25em;
 	display: block;
 	position: relative;
 	font-family: 'Roboto', sans-serif;
@@ -351,7 +351,7 @@ footer p {
 
 .contact-div {
 	height: 17em;
-	margin: 7em auto 3em auto;
+	margin: 5em auto 3em auto;
 	display: block;
 	position: relative;
 	top: 0;
