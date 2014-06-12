@@ -23,7 +23,9 @@ body {
 /* Added Fonts */
 @font-face {
 	font-family: 'Heydings';
-	src: url('/public/fonts/heydings/heydings_icons-webfont.ttf');
+	src: url('/public/fonts/heydings/heydings_icons-webfont.eot'); /* IE */
+	src: url('/public/fonts/heydings/heydings_icons-webfont.woff') format('woff'),
+		 url('/public/fonts/heydings/heydings_icons-webfont.ttf') format('truetype');
 }
 
 
@@ -151,6 +153,7 @@ body {
 	background-color: #394042;
 	height: 5em;
 	width: 100%;
+	min-width: 705px;
 	position: relative;
 	top: 0;
 	z-index: 999;
@@ -172,7 +175,7 @@ footer p {
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	font-size: 13px;
-	margin-top: 1.5em;
+	margin-top: 0.2em;
 }
 
 .menu-links {
@@ -301,7 +304,7 @@ footer p {
 }
 
 #left-section h1 {
-	width: 18em;
+	width: 16em;
 	border-bottom: 1px solid #34495e;
 	padding-bottom: 0.4em;
 	margin: 0 auto 1em auto;
@@ -313,7 +316,7 @@ footer p {
 }
 
 #middle-section h1 {
-	width: 19em;
+	width: 16em;
 	border-bottom: 1px solid #34495e;
 	padding-bottom: 0.4em;
 	margin: 0 auto 0 auto;
@@ -328,7 +331,7 @@ footer p {
 }
 
 #price-section h1 {
-	width: 11.5em;
+	width: 16em;
 	border-bottom: 1px solid #34495e;
 	padding-bottom: 0.4em;
 	margin: 0 auto 1em auto;

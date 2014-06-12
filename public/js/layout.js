@@ -134,14 +134,14 @@
 
 		$(window).scroll(function(){
 			var winPos = $(window).scrollTop();
+			var winHeight = $(window).height();
 			console.log(winPos);
 			var bottom;
 			var startPos = 0;
 			var topPos = $('#top').offset().top - 140;
 			var leftSection = $('#left-section').offset().top - 140;
 			var priceSection = $(_this.priceSection).offset().top - 245;
-			var contactSection = $(_this.contactDiv).offset().top - 245;
-			var winHeight = $(window).height();
+			var contactSection = $(_this.contactDiv).offset().top - 300;
 
 
 			if(winPos >= startPos && winPos < topPos){
