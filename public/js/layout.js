@@ -12,6 +12,7 @@
 		this.startContact = '#start-contact';
 		this.priceSection = '#price-section';
 		this.contactDiv = '.contact-div';
+		this.contactForm = '#contact-form';
 
 		this.init();
 	}
@@ -190,7 +191,6 @@
 			rules: {
 				fullname: {
 					required: true,
-					minlength: 2
 				},
 				email: {
 					required: true,
@@ -236,7 +236,7 @@
 				data: dataString,
 				success: function(){
 					$('.contact-form').hide();
-					$('.contact-div').append('<p class="success-msg">Su mensaje a sido enviado.</p>');
+					$('.contact-div').append('<p class="success-msg">Su mensaje ha sido enviado.</p>');
 				},
 				error: function(){
 					alert('Form not submitted');
